@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Header */
+#main-header {
+  background-color: #FF662A;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-menu a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #4F3F84;
+}
+
+.search-box {
+  display: flex;
+  gap: 5px;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  background-color: #4F3F84;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Seccion video */
+.video-section {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-placeholder {
+  max-width: 100%;
+  width: 560px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-placeholder iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Desafios empresariales */
+.desafios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.desafios-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.desafio-item {
+  width: 250px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+  margin-bottom: 15px;
+}
+
+.img-placeholder img {
+  width: 100%;
+  height: auto;
+  max-height: 130px;
+  object-fit: contain;
+}
+
+
+/* Seccion IA */
+.ia-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 40px 80px;
+  gap: 40px;
+}
+
+.ia-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.ia-text h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #222;
+}
+
+.ia-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.ia-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.ia-card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: 170px;
+}
+
+.ia-card img {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.ia-card .percentage {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.ia-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Foter */
+.footer {
+  background-color: #4F3F84;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.newsletter {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 250px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background-color: #FFA22A;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.footer-logo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-logo .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-logo .social-icons a img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer-links p {
+  margin: 5px 0;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .search-box {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .ia-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .ia-text {
+    max-width: 100%;
+  }
+
+  .ia-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo-title {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .logo-title img {
+    width: 50px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .search-box input {
+    width: 90%;
+  }
+
+  .search-box button {
+    width: auto;
+  }
+  .nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .desafios-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desafio-item {
+    width: 90%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+
+  .video-placeholder iframe {
+    height: 220px;
+  }
+}
